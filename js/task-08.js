@@ -8,7 +8,8 @@ function submit(event) {
     if (email.value === "" || password.value === "") {
         return alert("Не заповнені поля!!!");
     }
-    console.log(`Ел. пошта: ${email.value}, Пароль: ${password.value}`);
+    console.log({ email: email.value, password: password.value });
+    
     event.currentTarget.reset();
 }
 
